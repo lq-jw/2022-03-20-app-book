@@ -1,0 +1,36 @@
+{
+    "bookTitle" : "book",
+    "bookList" : [
+        {
+            "title": "Fashionopolis",
+            "artist": "Dana Thomas",
+            "image": "https://github.com/lq-jw/2022-03-20-app-book/blob/main/book-img/img_book_fashinopolis.png"
+        },
+        {
+            "title": "Chanel",
+            "artist": "Patrick Mauries",
+            "image": "https://github.com/lq-jw/2022-03-20-app-book/blob/main/book-img/img_book_chanel.png"
+        },
+        {
+            "title": "Calligraphy",
+            "artist": "June & Lucy",
+            "image": "https://github.com/lq-jw/2022-03-20-app-book/blob/main/book-img/img_book_calligraphy.png"
+        },
+        {
+            "title": "Yves Saint Laurent",
+            "artist": "Suzy Menkes",
+            "image": "https://github.com/lq-jw/2022-03-20-app-book/blob/main/book-img/img_book_ysl.png",
+            "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+        },
+        {
+            "title": "The Book of Signs",
+            "artist": "Rudolf Koch",
+            "image": "https://github.com/lq-jw/2022-03-20-app-book/blob/main/book-img/img_book_tbos.png"
+        },
+        {
+            "title": "Stitched Up",
+            "artist": "Tansy E. Hoskins",
+            "image": "https://github.com/lq-jw/2022-03-20-app-book/blob/main/book-img/img_book_stitchedup.png"
+        }
+    ]
+}
