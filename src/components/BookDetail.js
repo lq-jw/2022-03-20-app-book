@@ -6,31 +6,50 @@ const BookDetail = ({ book, navigation }) => {
         <View>
             <View>
                 <Image
-                    source = {{
-                        uri: book.image
-                    }}
+                    style={styles.bookimg}
+                    source = {{uri: book.image}}
                 />
                 <View>
-                    <Text>{book.title}</Text>
-                    <Text>{book.artist}</Text>
+                    <Text style={styles.booktitle}>{book.title}</Text>
+                    <Text style={styles.bookartist}>{book.artist}</Text>
                 </View>
             </View>
             <View>
-                <Image
-                    source = {{
-                        uri: book.image
-                    }}
-                />
+                {/* <Image
+                    style={styles.bookimg}
+                    source = {{uri: book.image}}
+                /> */}
                 <Pressable 
+                    style={styles.bookbtn}
                     onPress={() => navigation.navigate('Detail', book)}
                 ></Pressable>                
-                <View>
-                    <Text>{book.title}</Text>
+                {/* <View>
+                    { <Text style={styles.booktitle}>{book.title}</Text> }
                     <Text>{book.artist}</Text>
-                </View>                
+                </View>                 */}
             </View>
         </View>
     )
 };
+
+const styles = StyleSheet.create({
+    booktitle: {
+        fontFamily: "Roboto",
+        fontSize: 16,
+    },
+    bookartist:{
+        fontFamily: "Roboto",
+        fontSize: 12,        
+    },
+    bookimg: {
+        height: 200,
+        width: 140,
+    },
+    bookbtn: {
+        height: 20,
+        width: 40,
+        backgroundColor: "#4A9EED"
+    }
+});
 
 export default BookDetail;

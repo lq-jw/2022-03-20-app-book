@@ -7,7 +7,7 @@ const BookScreen = ({ navigation }) => {
     return(
         <View style = {{flex: 1}}>
             <BookList
-                list = {bookData.bookList}
+                // list = {bookData.bookList}
                 navigation = {navigation}
             />
         </View>
