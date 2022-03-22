@@ -1,33 +1,36 @@
 import React from "react";
-import { StyleSheet, Text, View, Image, Pressable, Linking} from "react-native";
+import { StyleSheet, Text, View, Image, Pressable} from "react-native";
 
 const BookDetail = ({ book, navigation }) => {
     return (
         <View>
             <View>
-                <Image
+                <Pressable 
+                    style={styles.bookbtn}
+                    onPress={() => navigation.navigate('Detail', book)}
+                >
+                    <Image
                     style={styles.bookimg}
                     source = {{uri: book.image}}
-                />
+                    />                
+                </Pressable>                  
+
                 <View>
                     <Text style={styles.booktitle}>{book.title}</Text>
                     <Text style={styles.bookartist}>{book.artist}</Text>
                 </View>
             </View>
-            <View>
-                {/* <Image
+            {/* <View>
+                <Image
                     style={styles.bookimg}
                     source = {{uri: book.image}}
-                /> */}
-                <Pressable 
-                    style={styles.bookbtn}
-                    onPress={() => navigation.navigate('Detail', book)}
-                ></Pressable>                
-                {/* <View>
+                /> 
+              
+                <View>
                     { <Text style={styles.booktitle}>{book.title}</Text> }
                     <Text>{book.artist}</Text>
-                </View>                 */}
-            </View>
+                </View>                
+            </View> */}
         </View>
     )
 };

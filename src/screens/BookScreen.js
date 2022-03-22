@@ -1,7 +1,7 @@
 import React from "react";
 import { View } from "react-native";
 import BookList from "../components/BookList";
-import bookData from "../json/books.json";
+//import bookData from "../json/books.json";
 
 const BookScreen = ({ navigation }) => {
     return(

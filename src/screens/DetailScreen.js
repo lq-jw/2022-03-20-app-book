@@ -13,9 +13,7 @@ const DetailScreen = ({ route }) => {
             <View>
                 <Image
                     style={styles.detailimg}
-                    source ={{
-                        uri: image
-                    }} 
+                    source ={{ uri: image}} 
                 />    
             </View>
             <View>
@@ -29,7 +27,7 @@ const DetailScreen = ({ route }) => {
             </View>
         </ScrollView>
     );
-}
+};
 
 const styles = StyleSheet.create({
     booktitle: {
