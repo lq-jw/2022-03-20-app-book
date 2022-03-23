@@ -5,11 +5,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
-
+//import bookData from '../json/books.json';
 import BookMarkButton from "../components/BookMarkButton";
 import BookScreen from '../screens/BookScreen';
 import DetailScreen from '../screens/DetailScreen';
-//import bookData from '../json/books.json';
 import WishlistScreen from '../screens/Wishlist';
 import MybooksScreen from '../screens/MybooksScreen';
 
@@ -101,7 +100,7 @@ const HomeStack = () => {
             <Stack.Screen
                 name = "Homeeeee"
                 component = {BookScreen}
-                option = {{
+                options = {{
                     headerShadowVisible: false,
                     title: null,
                     headerStyle: {
@@ -138,7 +137,7 @@ const HomeStack = () => {
                         shadowOpacity: 0,
                         shadowOffset: 0,
                 },
-                headerRight: () => ( <BookMarkButton/> ),
+                //headerRight: () => ( <BookMarkButton/> ),
             }}
                 // option = {({ route }) => ({
                 //     title: route.params.title,

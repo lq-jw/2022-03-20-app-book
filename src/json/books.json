@@ -33,19 +33,25 @@
             "title": "Yves Saint Laurent",
             "artist": "Suzy Menkes",
             "image": "https://raw.githubusercontent.com/lq-jw/2022-03-20-app-book/main/book-img/img_book_ysl.png",
-            "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion."
+            "description": "A spectacular visual journey through 40 years of haute couture from one of the best-known and most trend-setting brands in fashion.",
+            "star_rating": 4.0,
+            "star_rating_text": "4.0"
         },
         {
             "title": "The Book of Signs",
             "artist": "Rudolf Koch",
             "image": "https://raw.githubusercontent.com/lq-jw/2022-03-20-app-book/main/book-img/img_book_tbos.png",
-            "description": "has no description"
+            "description": "has no description",
+            "star_rating": 4.0,
+            "star_rating_text": "4.0"
         },
         {
             "title": "Stitched Up",
             "artist": "Tansy E. Hoskins",
             "image": "https://raw.githubusercontent.com/lq-jw/2022-03-20-app-book/main/book-img/img_book_stitchedup.png",
-            "description": "has no description"
+            "description": "has no description",
+            "star_rating": 4.0,
+            "star_rating_text": "4.0"
         }            
         ]
     }

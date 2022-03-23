@@ -39,8 +39,8 @@ const styles = StyleSheet.create({
         marginTop: 10
       },
     thumbnailContainerStyle: {
-    flexDirection: "column",
-    justifyContent: "flex-start"
+        flexDirection: "column",
+        justifyContent: "flex-start"
     },  
     cardSectionStyle: {
         padding: 5,
