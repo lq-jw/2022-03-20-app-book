@@ -5,9 +5,9 @@ import Navigation from './src/navigation';
 const App = () => {
     return(
         <SafeAreaProvider>
-            <SafeAreaView style={{flex: 1}}>
+           {/* <SafeAreaView style={{flex: 1}}> */}
                 <Navigation />
-            </SafeAreaView>
+           {/* </SafeAreaView> */}
         </SafeAreaProvider>
     );
 }

@@ -99,7 +99,7 @@ const HomeStack = () => {
     return(
         <Stack.Navigator>
             <Stack.Screen
-                name = "Home"
+                name = "Homeeeee"
                 component = {BookScreen}
                 option = {{
                     headerShadowVisible: false,
