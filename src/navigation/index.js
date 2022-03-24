@@ -137,7 +137,7 @@ const HomeStack = () => {
                         shadowOpacity: 0,
                         shadowOffset: 0,
                 },
-                //headerRight: () => ( <BookMarkButton/> ),
+                headerRight: () => ( <BookMarkButton/> ),
             }}
                 // option = {({ route }) => ({
                 //     title: route.params.title,

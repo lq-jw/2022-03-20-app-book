@@ -26,6 +26,7 @@ const DetailScreen = ({ route }) => {
                    {star_rating ? (
                         <View style={styles.bookstar}>
                             <StarRating
+                                style={styles.bookstarStar}
                                 disabled={true}
                                 maxStars={5}
                                 rating={star_rating}
@@ -34,15 +35,16 @@ const DetailScreen = ({ route }) => {
                                 emptyStarColor={'#EDEDEF'}
                                 halfStarEnabled={true}
                                 starSize={14}
-                                // containerStyle={{justifyContent: "center"}}
-                                // starStyle={{marginRight: 4}}                            
+                                containerStyle={{justifyContent: "center"}}
+                                starStyle={{marginRight: 5}}                            
                             />
-                            <View style={styles.bookstarNum}>
-                                <Text>{star_rating_text}</Text>
-                                <Text> / 5.0</Text>
-                            </View>
+                            {/* <View style={styles.bookstarNum}> */}
+                                <Text style={styles.bookstarNum}>{star_rating_text}</Text>
+                                <Text style={styles.bookstarNumBack}> / 5.0</Text>
+                            {/* </View> */}
                         </View>) : null 
-                    }                    
+                    }   
+
                     <Text style={styles.bookdescription}>{description}</Text>
                     <TouchableOpacity style = {styles.detailbtn}>
                         <Text style = {styles.detailbtnTxt}>BUY NOW FOR $46.99</Text>
@@ -69,13 +71,11 @@ const styles = StyleSheet.create({
         alignItems: "center"
     },
     booktitle: {
-        fontFamily: "Roboto",
         fontSize: 24,
         marginTop: 10,
         marginBottom: 10,
     },
     bookartist: {
-        fontFamily: "Roboto",
         fontSize: 14,
         color: "#666666",
         marginTop: 0,
@@ -85,13 +85,17 @@ const styles = StyleSheet.create({
         height: 300,
         width: 210,
         marginTop: 10,
-        marginBottom: 30,
+        marginBottom: 10,
+
     },
     bookdescription: {
         marginLeft: 35,
         marginRight: 35,
+        lineHeight: 24,
+        textAlign: "center",
         alignItems: 'center',
         justifyContent: 'center',
+        letterSpacing: 0.2,
     },
     detailbtn: {
         width: 190,
@@ -108,15 +112,18 @@ const styles = StyleSheet.create({
         color: "#fff",
     },
     bookstar:{
-        width:"100%",
+        flex: 1,
         flexDirection:"row",
-        justifyContent:'center'
+        justifyContent:'center',
+        alignItems: "center",
+        marginBottom: 10,
     },
     bookstarNum: {             
-        flexDirection: "row",
-        justifyContent: 'center',
-        marginLeft: '8px',
+        marginLeft: 8,
     },
+    bookstarNumBack: {
+        color: "#666666",
+    }
 });
 
 export default DetailScreen;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-native';
+import { Button } from 'native-base';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default class BookMarkButton extends Component {

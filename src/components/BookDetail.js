@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, Pressable} from "react-native";
+import StarRating from 'react-native-star-rating';
 
 const BookDetail = ({ book, navigation }) => {
     return (
@@ -15,6 +16,20 @@ const BookDetail = ({ book, navigation }) => {
                     />                
                 </Pressable>                  
 
+                {book.star_rating ? (
+                        <StarRating
+                        disabled={true}
+                        maxStars={5}
+                        rating={book.star_rating}
+                        fullStarColor={'#FFC41F'}
+                        emptyStar = {"star"}
+                        emptyStarColor={'#EDEDEF'}
+                        starSize={14}
+                        containerStyle={{justifyContent: "flex-start", marginTop: 15, marginLeft: 8}}
+                        starStyle={{marginRight: 4}}
+                    />) : null                    
+                    
+                }
                 <View style={styles.headerContentStyle}>
                     <Text style={styles.booktitle}>{book.title}</Text>
                     <Text style={styles.bookartist}>{book.artist}</Text>
@@ -52,14 +67,13 @@ const styles = StyleSheet.create({
         flexDirection: "column",
         justifyContent: "space-around",
         paddingLeft: 10,
-        marginTop: 15
+        marginTop: 5
     },     
     booktitle: {
-        fontFamily: "Roboto",
         fontSize: 16,
+        marginBottom: 3,
     },
     bookartist:{
-        fontFamily: "Roboto",
         fontSize: 12,        
         opacity: 50,
         color: 'rgba(19, 19, 19, 0.5)'

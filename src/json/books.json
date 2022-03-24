@@ -42,16 +42,16 @@
             "artist": "Rudolf Koch",
             "image": "https://raw.githubusercontent.com/lq-jw/2022-03-20-app-book/main/book-img/img_book_tbos.png",
             "description": "has no description",
-            "star_rating": 4.0,
-            "star_rating_text": "4.0"
+            "star_rating": 3.0,
+            "star_rating_text": "3.0"
         },
         {
             "title": "Stitched Up",
             "artist": "Tansy E. Hoskins",
             "image": "https://raw.githubusercontent.com/lq-jw/2022-03-20-app-book/main/book-img/img_book_stitchedup.png",
             "description": "has no description",
-            "star_rating": 4.0,
-            "star_rating_text": "4.0"
+            "star_rating": 3.0,
+            "star_rating_text": "3.0"
         }            
         ]
     }
